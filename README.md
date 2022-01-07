@@ -15,7 +15,7 @@ Branches:
 - olgerthasko: contains unorganized notebooks, not for public use
 - sally: contains unorganized notebooks, not for public use
 
-*The following repository content information is for the main branch only, other branches should be ignored*
+*The following repository content information is for the main branch only*
 
 ### Overview 
 
@@ -31,6 +31,16 @@ There is no single variable that affects house price. Many different factors det
 We use data from historical home sales in King County to predict home price. Our dataset includes 21,597 homes sold between 2014–2015 and includes a number of variables about the homes being sold, such as the number of bathrooms, total square footage of living area, quality of construction materials, if it has a scenic view, and if the property is located by water. We supplemented this data with the median income per zip code in King County in order to better narrow down search radiuses.
 
 Before constructing our models, we explored the data and preprocessed it. This included rounding numbers, replacing special characters with numbers, turning dates into date fields, and label-encoding the categorical data. We also had to deal with NaN values. We typically did this by replacing NaNs with the column median value where it made sense. For example, we changed the 2,353 missing values for waterfront to “No” because the vast majority of homes had a “No” value. We also corrected a house priced at $640,000 with 33 bathrooms. Since the number of bathrooms was mostly likely a data entry error, we changed the number of bathrooms to 3. This preprocessing cleaned up the data and prepared it for modeling.
+
+### Data Understanding
+
+We used data provided to us (kc_house_data) as well as income by zipcode data that we got from kagle.com ([https://www.kaggle.com/miker400/washington-state-home-mortgage-hdma2016?select=Washington_State_HDMA-2016.csv](url)).
+
+Once we read both datasets, we combined the datasets which resulted in 21,420 data points. From there we prepared our data to build our models.
+
+First we ran functions to change date to a usable format and bin(ed) dateds into seasons. We also filtered our data by price so that we only worked with houses prices $100,000 to $1,500,000, we then filtered by bedrooms, bathrooms and sqft_living so that the houses we worked with has less than 7 bedrooms, less than 6 bathrooms, and were less than 8000 square feet. We did this after looking at box plots of each variable and seeing that outliers were present beyond those bounds.
+
+Once our data was prepared we started fitting our dataframe intro different regression models.
 
 ### Conclusion & Recommendations
 
