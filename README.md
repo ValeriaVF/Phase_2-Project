@@ -10,12 +10,13 @@
 ### Repository Contents
 
 Branches:
-- main: contains finalized project notebooks, to be used by public
+- main: contains unorganized notebooks, not for public use
 - Valeria: contains unorganized notebooks, not for public use
 - olgerthasko: contains unorganized notebooks, not for public use
+- **orlgethasko1: contains finalized project notebooks, to be used by public**
 - sally: contains unorganized notebooks, not for public use
 
-*The following repository content information is for the main branch only*
+*The following repository content information is for **olgerthasko1** branch only*
 
 ### Overview 
 
