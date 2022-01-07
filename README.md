@@ -1,16 +1,8 @@
-# Phase_2-Project
+Data Understanding
+This dataset we're using contains house sale prices for King County, Washington. It includes 21,597 homes sold between 2014–2015. The data includes a number of variables about the homes being sold, such as the number of bathrooms, total square footage of living area, and if the property is located by water.
 
-For this project, the README.md file should contain:
-
-Overview
-
-Business and Data Understanding
-(Explain your stakeholder audience here)
-
-Modeling
-
-Regression Results
-
-Conclusion (Recommendations)
-
-Just like in Phase 1, the README.md file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
+Conclusion & Recommendations
+Potential homeowners have a confluence of factors to consider when purchasing a home. They should consider which features are most and least important to them. Our models can aid them on choosing which home features they need to compromise on in order to be able to afford the features that are most important to them. Our model can also help them find the largest home possible for their budget by telling them how much their price increases for every additional square foot added to their home, all other things held constant. Further, we recommend narrowing the home search by looking at the price per square foot of home based on location as well as the median income of zip codes. This will save time by allowing people to focus their home searches in areas that will yield the highest number of homes for sale within their budget.
+For future next steps, one helpful route of inquiry would be to acquire more years of housing data. Currently, with data spanning less than 2 years, we have a limited view of how house prices may fluctuate over time. Getting more data over various years would strengthen our predictions.
+Another additional area to examine is school districts. Often families pick homes based on the school districts in which they are in. Being able to offer clients information about the quality of nearby school districts when deciding on purchasing a home would be helpful information to filter choices.
+Finally, we could consider home location to downtown Seattle and popular attractions. For home buyers interested in living near or within walking distance to certain places, knowing how much prices homes change in relation to proximity would be a useful additional factor.
