@@ -1,6 +1,6 @@
 # Column Names and Descriptions for King County Data Set
 * `id` - Unique identifier for a house
-#####* `date` - Date house was sold
+* `date` - Date house was sold
 * `price` - Sale price (prediction target)
 * `bedrooms` - Number of bedrooms
 * `bathrooms` - Number of bathrooms
@@ -9,7 +9,7 @@
 * `floors` - Number of floors (levels) in house
 * `waterfront` - Whether the house is on a waterfront
   * Includes Duwamish, Elliott Bay, Puget Sound, Lake Union, Ship Canal, Lake Washington, Lake Sammamish, other lake, and river/slough waterfronts
-#####* `view` - Quality of view from house
+* `view` - Quality of view from house
   * Includes views of Mt. Rainier, Olympics, Cascades, Territorial, Seattle Skyline, Puget Sound, Lake Washington, Lake Sammamish, small lake / river / creek, and other
 * `condition` - How good the overall condition of the house is. Related to maintenance of house.
   * See the [King County Assessor Website](https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r) for further explanation of each condition code
