@@ -1,6 +1,3 @@
-- README.md includes concise summary of project with all data science steps
-- README.md links to presentation and sources
-- README.md includes instructions for navigating the repository
 ### Final Project Submission
 - Students' names: Olgert Hasko, Sally Heinzel, Valeria Viscarra Fossati
 - Students' pace: full time
@@ -35,6 +32,13 @@ We use data from historical home sales in King County to predict home price. Our
 
 Before constructing our models, we explored the data and preprocessed it. This included rounding numbers, replacing special characters with numbers, turning dates into date fields, and label-encoding the categorical data. We also had to deal with NaN values. We typically did this by replacing NaNs with the column median value where it made sense. For example, we changed the 2,353 missing values for waterfront to “No” because the vast majority of homes had a “No” value. We also corrected a house priced at $640,000 with 33 bathrooms. Since the number of bathrooms was mostly likely a data entry error, we changed the number of bathrooms to 3. This preprocessing cleaned up the data and prepared it for modeling.
 
+### Conclusion & Recommendations
+
+Potential homeowners have a multiplicity of factors to consider when purchasing a home. They should consider which features are most and least important to them. Our models can aid them in choosing which home features they need to compromise on in order to be able to afford the features that are most important to them. Our model can also help them find the largest home possible for their budget by telling them how much their price increases for every additional square foot added to their home, all other things held constant. Further, we recommend narrowing the home search by looking at the price per square foot of home based on location as well as the median income of zip codes. This will save time by allowing people to focus their home searches in areas that will yield the highest number of homes for sale within their budget.
+
+For future next steps, one helpful route of inquiry would be to acquire more years of housing data. Currently, with data spanning less than 2 years, we have a limited view of how house prices may fluctuate over time. Getting more data over various years would strengthen our predictions.
+Another additional area to examine is school districts. Often families pick homes based on the school districts in which they are in. Being able to offer clients information about the quality of nearby school districts when deciding on purchasing a home would be helpful information to filter choices.
+Finally, we could consider a home’s location in relation to downtown Seattle or other popular attractions. For home buyers interested in living near or within walking distance to certain places, knowing how much prices homes change in relation to proximity would be a useful additional factor.
 
 
 
