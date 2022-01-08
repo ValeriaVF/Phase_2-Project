@@ -43,6 +43,24 @@ First we ran functions to change date to a usable format and bin(ed) dateds into
 
 Once our data was prepared we started fitting our dataframe intro different regression models.
 
+### Regression Models
+
+Our first regression model contained information from our entire dataframe. It yielded an r-squared of 0.706 and a RMSE of 195078.
+
+<img width="610" alt="Screen Shot 2022-01-08 at 1 46 35 PM" src="https://user-images.githubusercontent.com/79488205/148657686-d522c89e-c2af-47d7-a115-0032f5bdd26f.png">
+
+From there, we created pairplots to see what outliers needed to be removed. After removing the outliers, we used log transformations to turn our data into normal distributions. Afterdoing this, our model yielded an r-squared of 0.541 and a RMSE of 228936. 
+
+<img width="605" alt="Screen Shot 2022-01-08 at 1 50 06 PM" src="https://user-images.githubusercontent.com/79488205/148657810-46bf09bc-149c-411e-a985-da7ae1bf452c.png">
+
+We then adapted our log transformations, differentiating between numerical and categorical variables. Our new model yielded an r-squared of 0.491 and a RMSE of 234729.
+
+<img width="611" alt="Screen Shot 2022-01-08 at 1 53 09 PM" src="https://user-images.githubusercontent.com/79488205/148657900-b9323a05-86e2-4f0b-bcd9-ef34b29fffb3.png">
+
+We then used feature selection to further adapt our model. Our final model yielded a, r-squared of 0.481 and a TMSE of 0.3747.
+
+<img width="614" alt="Screen Shot 2022-01-08 at 1 56 15 PM" src="https://user-images.githubusercontent.com/79488205/148657990-6e68d469-f26e-4763-8b02-a7cf34f44059.png">
+
 ### Conclusion & Recommendations
 
 Potential homeowners have a multiplicity of factors to consider when purchasing a home. They should consider which features are most and least important to them. Our models can aid them in choosing which home features they need to compromise on in order to be able to afford the features that are most important to them. Our model can also help them find the largest home possible for their budget by telling them how much their price increases for every additional square foot added to their home, all other things held constant. Further, we recommend narrowing the home search by looking at the price per square foot of home based on location as well as the median income of zip codes. This will save time by allowing people to focus their home searches in areas that will yield the highest number of homes for sale within their budget.
